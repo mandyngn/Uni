@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formular</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- <script src="assets/scripts/methods.js" refer></script> -->
+    <script src="assets/scripts/checkForm.js" defer></script>
+    <script src="assets/scripts/JSON.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Informationen</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Welches Motorrad ist das richtige?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="index.html" method="get">
+      <fieldset>
+        <legend>Persönliche Daten</legend>
+        <!--span for customizing only a specific part of the code-->
+        <label for="name">Vorname</label>
+        <input
+          id="name"
+          required
+          type="text"
+          placeholder="Max"
+          aria-label="letters-only"
+          pattern="^[A-Z,Ö,Ä,Ü]{1,}[a-z,ö,ü,ä,ß]{1,}"
+          name="name" />
+
+        <!--span for customizing only a specific part of the code-->
+        <label for="lastName">Name</label>
+        <input
+          id="lastName"
+          required
+          type="text"
+          placeholder="Mustermann"
+          aria-label="letters-only"
+          pattern="^[A-Z,Ö,Ä,Ü]{1}[a-z,ö,ü,ä,ß]{1,}"
+          name="lastName" />
+
+        <!--span for customizing only a specific part of the code-->
+        <label for="age">Alter</label>
+        <input id="age" required type="number" min="18" max="99" name="age" />
+
+        <label for="mail">E-Mail</label>
+        <input
+          id="mail"
+          type="email"
+          name="mail"
+          placeholder="info@beispiel.de" />
+
+        <label for="farbe">Lieblingsfarbe</label>
+        <input id="farbe" name="lieblingsfarbe" type="color" value="#bc8f8f" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Führerscheinklasse</legend>
+
+        <label for="klasseAM">AM</label>
+        <input
+          id="klasseAM"
+          type="checkbox"
+          name="license[]"
+          value="klasseAM" />
+
+        <label for="klasseA1">A1</label>
+        <input
+          id="klasseA1"
+          type="checkbox"
+          name="license[]"
+          value="klasseA1" />
+
+        <label for="klasseA2">A2</label>
+        <input
+          id="klasseA2"
+          type="checkbox"
+          name="license[]"
+          value="klasseA2" />
+
+        <label for="klasseA">A</label>
+        <input id="klasseA" type="checkbox" name="license[]" value="klasseA" />
+
+        <label for="klasseB1">B1</label>
+        <input
+          id="klasseB1"
+          type="checkbox"
+          name="license[]"
+          value="klasseB1" />
+
+        <label for="klasseB">B</label>
+        <input id="klasseB" type="checkbox" name="license[]" value="klasseB" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Führerscheinerfahrung</legend>
+        <label for="laenge"
+          >Seit wie vielen Jahre hast du deinen Führerschein?</label
+        >
+        <input
+          id="laenge"
+          type="text"
+          name="laenge"
+          pattern="[0-9]{1,}"
+          placeholder="10" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Lieblingsmotorradtyp</legend>
+        <label for="super">Supersportler</label>
+        <input id="super" type="radio" name="bike" value="Supersportler" />
+
+        <label for="naked">Naked Bike</label>
+        <input id="naked" type="radio" name="bike" value="Naked Bike" />
+
+        <label for="andere">andere</label>
+        <input id="andere" type="radio" name="bike" value="andere" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Deine Meinung zu Motorrädern</legend>
+        <label for="frage"> Deine Meinung </label>
+        <input
+          id="frage"
+          type="text"
+          placeholder="Deine Meinung"
+          name="meinung"
+          pattern="[A-Z,Ö,Ä,Ü]{1}[a-z,ö,ä,ü,ß]{1,}" />
+      </fieldset>
+      <!-- <fieldset>
+        <legend>Dein eigenes Motorrad?</legend>
+        <label for="eigenesMotorrad">
+          Falls du ein eigenes Motorrad hast, kannst du hier ein Foto hochladen!
+        </label>
+        <input
+          type="file"
+          id="eigenesMotorrad"
+          name="eigenesMotorrad"
+          accept="image/png, image/jpeg" />
+      </fieldset> -->
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

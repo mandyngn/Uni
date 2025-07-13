@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- <script src="script/methods.js" defer></script> -->
+    <!-- <script src="script/dom.js" defer></script> -->
+    <!-- <script src="script/listener.js" defer></script> -->
+    <script src="script/propagation.js" defer></script>
+    <!-- async und defer:
+    https://www.mediaevent.de/javascript/programm-struktur.html
+    -->
+  </head>
+  <body>
+    <h1 id="head-line">JavaScript und das DOM</h1>
+    <article>
+      <h2>Das Document Object Model</h2>
+      <p>
+        Das DOM bildet das HTML Dokument in einer Baumstruktur ab. Es besteht
+        aus dem obersten Knoten <code>document</code>, und den Kindknoten
+        <em class="emphasize">Element</em>, <em class="emphasize">Attribut</em>,
+        und <em class="emphasize">Text</em>.
+      </p>
+      <a href="https://www.mediaevent.de/javascript/image.html" target="_blank"
+        >Mehr zu DOM und JS</a
+      >.
+      <figure>
+        <img src="pics/sonne.png" alt="Wunderbare Sonne!" />
+        <figcaption>Die Sonne als Quelle des Wohlbefindens.</figcaption>
+      </figure>
+    </article>
+    <article>
+      <h2>Wir möchten alles über Sie wissen!</h2>
+      <p>Lassen Sie uns Ihre Interessen und auch Ihre Stimmung hier wissen.</p>
+      <form method="get">
+        <fieldset>
+          <legend>Persönliche Angaben</legend>
+          <label for="user">Name</label>
+          <input id="user" />
+        </fieldset>
+        <fieldset>
+          <legend>Interessen</legend>
+          <label for="html">HTML</label>
+          <input
+            id="html"
+            type="checkbox"
+            value="html"
+            name="interests[]"
+            checked />
+          <label for="css">CSS</label>
+          <input id="css" type="checkbox" value="css" name="interests[]" />
+          <label for="js">JS</label>
+          <input id="js" type="checkbox" value="js" name="interests[]" />
+        </fieldset>
+        <fieldset>
+          <legend>Stimmung</legend>
+          <label for="good">Mir geht es gut!</label>
+          <input id="good" type="radio" value="g" name="mood" />
+          <label for="bad">Mir geht es schlecht.</label>
+          <input id="bad" type="radio" value="b" name="mood" />
+        </fieldset>
+        <fieldset>
+          <legend>Wo wohnen Sie?</legend>
+          <label for="region">Wählen Sie eine Region.</label>
+          <select id="region" name="region">
+            <option value="nord">Norden</option>
+            <option value="south">Süden</option>
+          </select>
+        </fieldset>
+        <input type="submit" value="Abschicken" />
+        <input type="reset" />
+      </form>
+    </article>
+  </body>
+</html>

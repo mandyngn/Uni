@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+  line-height: 1.4;
+  --basic-font-size: 1.2rem;
+  font-size: var(--basic-font-size);
+}
+
+h1 {
+  font-size: calc(var(--basic-font-size) * 1.9);
+}
+h2 {
+  font-size: calc(var(--basic-font-size) * 1.6);
+}
+p {
+  font-size: calc(var(--basic-font-size) * 1.1);
+  max-width: 60ch;
+  margin: 2% auto;
+  padding: 2%;
+  background: hsl(240 0% 90%);
+}
+
+/* Layout Veränderungen ohne Query */
+div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 1%;
+}
+
+/* Abfragen (Queries) für Viewport Veränderungen,
+die nicht zum Layout gehören. */
+/* Alternativ:
+... and (width < 420px{}) */
+@media screen and (max-width: 420px) {
+  p {
+    font-size: calc(var(--basic-font-size) * 1.8);
+    background: hsl(240 0% 95%);
+  }
+  h1,
+  h2 {
+    font-size: calc(var(--basic-font-size) * 2.2);
+    text-align: center;
+  }
+}
+
+@media print {
+  /* Elemente entfernen, die nicht benötigt werden.
+  Formulare, Bilder, Werbetexte, Videos, ... */
+  form {
+    display: none;
+  }
+  article,
+  p {
+    background: none;
+    font-size: 18pt;
+    margin: 0;
+  }
+  div {
+    display: block;
+  }
+
+  a::after {
+    content: attr(href);
+    display: block;
+    text-decoration: none;
+    color: hsl(0 0% 0%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  p {
+    background: hsl(0 0% 5%);
+    color: hsl(0 0% 98%);
+  }
+  a {
+    color: hsl(240 50% 90%);
+    font-style: italic;
+  }
+}

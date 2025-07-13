@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>display: grid</title>
+    <link rel="stylesheet" href="styles/grid.css" />
+  </head>
+  <body>
+    <h1>display: grid</h1>
+    <nav>
+      <ul>
+        <li><a href="#grid">The Grid</a></li>
+        <li><a href="#gridContainer">The Grid-Container</a></li>
+        <li><a href="#gridPropsContainer">Properties: Grid-Contaier</a></li>
+        <li><a href="#gridPropsItem">Properties: Grid-Items</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article id="grid">
+        <h2>1 Das Grid</h2>
+        <p>
+          The grid modul is a two dimensional layout tool.<br />
+          In comparison to the flexbox modul it is useful not only for
+          compononets, but also for the document as a whole.<br />
+          After declaring a grid container, you can place all direct children,
+          the grid-items in row and/or column. Each item can be placed
+          indepently from its order in the HTML document.
+        </p>
+        <h3>Grid Vocabulary</h3>
+        <ul>
+          <li>row</li>
+          <li>column</li>
+          <li>area</li>
+          <li>cell</li>
+          <li>line</li>
+        </ul>
+      </article>
+      <article id="gridContainer">
+        <h2>2 The Grid-Container</h2>
+        <p>
+          <code>display: grid</code> sets the element as grid-container and its
+          direct children to grid-items. You can then declare rows, columns
+          and/or areas and place all grid-items within the grid-container.
+        </p>
+      </article>
+      <article id="gridPropsContainer">
+        <h2>3 Properties for the Grid-Container</h2>
+        <ul>
+          <li><code>grid-template-rows</code></li>
+          <li><code>grid-template-columns</code></li>
+          <li><code>grid-template-areas</code></li>
+          <li><code>grid-column-gap</code></li>
+          <li><code>grid-row-gap</code></li>
+          <li><code>grid-gap</code></li>
+          <li><code>justify-items (row)</code></li>
+          <li><code>align-items (column)</code></li>
+          <li><code></code>place-items (row and column)</li>
+        </ul>
+      </article>
+      <article id="gridPropsItem">
+        <h2>4 Properties for the Grid-Items</h2>
+        <ul>
+          <li><code>grid-column-start</code></li>
+          <li><code>grid-column-end</code></li>
+          <li><code>grid-row-start</code></li>
+          <li><code>grid-row-end</code></li>
+          <li><code>span</code></li>
+        </ul>
+      </article>
+      <footer>
+        <h2>5 Helpful Links</h2>
+        <ul>
+          <li>
+            <a
+              href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+              target="_blank"
+              >CSS Tricks: Guide to Grid</a
+            >
+          </li>
+          <li>
+            <a href="https://www.mediaevent.de/css/grid.html" target="_blank"
+              >Media Event: CSS Grid
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.mediaevent.de/css/grid-align.html"
+              target="_blank"
+              >Media Event: CSS Grid Ausrichtung</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+article,
+footer,
+li {
+  background: hsl(240 0% 90%);
+}
+
+/* Grid Container */
+nav ul {
+  display: grid;
+  /* Fixes Template bauen */
+  gap: 5px;
+
+  /* grid-template-columns: 10% 20% 30%;
+  grid-template-columns: 20% 40% 20% 80px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: repeat(3, 1fr) 80px;
+  grid-template-columns: repeat(2, 1fr 3fr);
+  grid-template-rows: repeat(3, 1fr); */
+}
+
+/* Responsive Template 
+RAM: repeat - autofit - minmax*/
+nav {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    li {
+      text-align: center;
+    }
+  }
+}
+
+/* Benannte area */
+main {
+  > ::first-letter {
+    color: hsl(0 100% 50%);
+  }
+  /* Das Grid wird über das display gesetzt.
+  Wenn dieses geändert wird, dann gilt der letzte Wert,
+  in dem Selektor mit der höchsten Spezifität. */
+  display: grid;
+  /* display: flex;
+  display: block; */
+  gap: 1%;
+  /* Template mit benannten area */
+  grid-template-areas:
+    "head   head"
+    "cont1  cont2"
+    "cont3  cont3"
+    "foot   foot";
+
+  #grid {
+    grid-area: head;
+  }
+  #gridContainer {
+    grid-area: cont3;
+  }
+  #gridPropsContainer {
+    grid-area: cont2;
+  }
+  #gridPropsItems {
+    grid-area: cont1;
+  }
+  footer {
+    grid-area: foot;
+  }
+}

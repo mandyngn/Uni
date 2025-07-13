@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles/09mediaQuery.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Media Queries</h1>
+      <article>
+        <h2>Verwendung von Media Queries</h2>
+        <div>
+          <p>
+            Mit einem media query kann man die Auflösung oder die Ausrichtung
+            eines viewports abfragen, und je nach Ergebnis der Abfrage eine
+            entsprechendes Design liefern. Ein media query ist ein stylesheet
+            geschachtelt in einem stylesheet.
+          </p>
+          <p>
+            Um das Layout zu verändern benötigen wir kein media query, es sei
+            denn wir brauchen eine ganz besondere individuelle Anordnung. Aber
+            wenn es z.B. um Farben oder Schriftgrößen geht, dann ist ein media
+            query unabdingbar.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>Hilfreiche Tools</h2>
+        <p>
+          Wenn Sie die developer tools in chrome öffnen, dann klicken Sie auf
+          "Gerätesymbolleiste einblenden." Im responsive mode können Sie dann
+          rechts mit den drei Punkten "Medienabfragen anzeigen".<br />
+          Ein hilfreicher Link findet sich bei
+          <a
+            href="https://css-tricks.com/a-complete-guide-to-css-media-queries/"
+            target="_blank"
+            >CSS Tricks</a
+          >.
+        </p>
+      </article>
+    </main>
+    <form>
+      <fieldset>
+        <legend>Druck?</legend>
+        <label for="y">Ja</label>
+        <input id="y" type="radio" value="y" name="print[]" />
+        <label for="n">Nein</label>
+        <input id="n" type="radio" value="n" name="print[]" />
+      </fieldset>
+    </form>
+  </body>
+</html>

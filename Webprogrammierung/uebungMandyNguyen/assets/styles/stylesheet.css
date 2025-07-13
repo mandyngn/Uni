@@ -1,0 +1,131 @@
+* {
+  background: rgb(205, 250, 230);
+  --headline: underline;
+  --tableBorder: 3px solid;
+  --mainColor: rgb(106, 135, 100);
+  --formBorder: 2px solid;
+  --formFont: 650;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgb(180, 230, 210);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  flex: 1 1 18rem;
+}
+header figure {
+  flex: 0 1 300px;
+  margin: 0;
+}
+header img {
+  max-width: 100%;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  opacity: 80%;
+  z-index: 1;
+}
+
+nav > ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem;
+}
+nav li {
+  flex: 1 1 200px;
+  text-align: center;
+  background-color: rgb(220, 250, 240);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+nav a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+h2,
+h3 {
+  flex: 1 1 100%;
+}
+
+article img {
+  max-width: 50%;
+}
+article {
+  flex: 0 1 45%;
+  min-width: 300px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  max-height: auto;
+}
+article figure {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 100%;
+}
+article p {
+  flex: 0 1 80ch;
+  padding: 0.5rem;
+  justify-content: center;
+}
+article figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+figure {
+  position: relative;
+}
+
+table {
+  display: flex;
+  flex-flow: row wrap;
+  border-collapse: collapse;
+}
+td,
+tr,
+th {
+  border: var(--tableBorder);
+  flex: 0 1 10rem;
+}
+th,
+td:nth-of-type(even) {
+  background: rgb(98, 134, 103);
+}
