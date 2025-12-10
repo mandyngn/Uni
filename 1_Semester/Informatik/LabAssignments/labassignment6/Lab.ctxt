@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Lab
+comment0.text=\n\ Write\ a\ description\ of\ class\ Lab\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Lab()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Lab\n
+comment2.params=
+comment2.target=void\ printArray()
+comment2.text=\n\ Print\ an\ array\ of\ numbers\ to\ the\ console\n
+comment3.params=grades
+comment3.target=void\ calcAverage(double[])
+comment3.text=\n\ Takes\ an\ array\ of\ grades,\ calculates\ the\ average\ and\ prints\ it\ out\ to\ the\ console\n\ \n\ @param\ array\ of\ numbers\ type\ double\n
+comment4.params=numbers
+comment4.target=void\ maxValue(int[])
+comment4.text=\n\ Finds\ the\ maximum\ value\ in\ an\ array\n\ \n\ @param\ array\ with\ integer\ numbers\n
+comment5.params=
+comment5.target=void\ reverseArray()
+comment5.text=\n\ Prints\ elements\ of\ a\ predefined\ array\ in\ reverse\ order\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\n\ main\ to\ call\ methods\n
+numComments=7

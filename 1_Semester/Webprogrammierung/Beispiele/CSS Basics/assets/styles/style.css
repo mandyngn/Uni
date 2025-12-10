@@ -1,0 +1,65 @@
+/*Universal Selektor*/
+* {
+  color: hsl(0 100% 50% / 1);
+  color: rgb(255 0 0 / 1);
+  color: #ff0000ff; /*ist gekürzt, eigentlich #FF0000*/
+}
+
+/*Typ Selektor*/
+h1,
+h2,
+h3 {
+  color: rgb(0 0 255);
+}
+
+/*Vererbung kann erzwungen werden*/
+abbr {
+  color: inherit;
+}
+
+/* Properties können vererbt werden:
+Boxeigenschaften (auch Farben) werden nicht vererbt.
+Schrifteigenschaften werden vererbt.
+*/
+
+/*Pseudo Klasse*/
+:root {
+  font-family: sans-serif;
+}
+
+/*Pseudo Element*/
+p::selection {
+  background-color: rgb(245, 255, 100);
+}
+
+/*Klassen Selektor*/
+.head-line {
+  text-decoration: underline;
+}
+
+/*Attribut Selektor*/
+[title] {
+  color: rgb(0, 255, 0);
+}
+
+/*ID Selektor*/
+#syntax {
+  border: 5px solid;
+}
+
+/*Pseudo Klasse*/
+li:hover {
+  background: rgb(119, 126, 119);
+}
+
+/*Strukturelle Pseudo Klasse*/
+table {
+  border-collapse: collapse;
+  td {
+    border: 1px solid rgb(119, 126, 119);
+  }
+  /*Strukturelle Pseduo Klasse*/
+  tr:nth-of-type(even) {
+    background-color: rgb(0, 255, 0);
+  }
+}
