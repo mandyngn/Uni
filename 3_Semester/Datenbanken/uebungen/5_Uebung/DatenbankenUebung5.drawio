@@ -373,14 +373,14 @@
     </mxGraphModel>
   </diagram>
   <diagram id="oQj7B6gbhcjCUqYEc-_X" name="Seite-2">
-    <mxGraphModel dx="983" dy="814" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1213" dy="1169" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="AvkM0oTWyBeAJRQ4HdFG-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Titel" vertex="1">
           <mxGeometry height="195" width="161" x="72.23999999999998" y="99" as="geometry" />
         </mxCell>
-        <mxCell id="AvkM0oTWyBeAJRQ4HdFG-2" parent="AvkM0oTWyBeAJRQ4HdFG-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;u&gt;Titel_ID&lt;/u&gt; (PK)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Titelname (not null, unique)&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Erscheinungsjahr&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Genre&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Altersfreigabe&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Typ&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(not null)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="AvkM0oTWyBeAJRQ4HdFG-2" parent="AvkM0oTWyBeAJRQ4HdFG-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;u&gt;Titel_ID&lt;/u&gt; (PK)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Titelname (not null, unique)&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Erscheinungsjahr (not null)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Genre (not null)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Altersfreigabe (not null)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Typ&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(not null)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="170" width="155.5" x="0.8700000000000001" y="22" as="geometry" />
         </mxCell>
         <mxCell id="AvkM0oTWyBeAJRQ4HdFG-10" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Episode" vertex="1">
