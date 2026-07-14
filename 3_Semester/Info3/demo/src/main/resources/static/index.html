@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugoonaboxd</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="header">
+        <h1>Sugoonaboxd</h1>
+        <p>Suche Filme, Serien oder Anime und bewerte sie mit 1–5 Sternen.</p>
+      </header>
+
+      <section class="controls">
+        <div class="search-row">
+          <label for="searchInput">Suche</label>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Titel eingeben..." />
+          <button id="searchButton">Suchen</button>
+        </div>
+
+        <div class="type-row">
+          <label>
+            <input type="radio" name="searchType" value="movie" checked />
+            Film
+          </label>
+          <label>
+            <input type="radio" name="searchType" value="tv" />
+            Serie
+          </label>
+          <label>
+            <input type="radio" name="searchType" value="anime" />
+            Anime
+          </label>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel">
+          <h2>Ergebnisse</h2>
+          <div id="results" class="results"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Meine Bewertungen</h2>
+          <div id="ratings" class="results"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>IMDb und Jikan APIs verwenden.</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
